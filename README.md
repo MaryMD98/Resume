@@ -9,7 +9,7 @@ The page displays a planner with timeblocks for standard business hours. Each ti
 
 In this homework, I used, jQuery, moment, bootstrap, and javascript to create the planner. 
 
-### Link to application [HERE](https://marymd98.github.io/Unit5-Homework/)
+### Link to application [HERE](https://marymd98.github.io/Resume/)
 
 ## Screenshot  of Work Day Scheduler:
 Below are screenshots of the Work Day Scheduler. 
