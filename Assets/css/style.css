@@ -1,8 +1,13 @@
+*{
+    /* font-family:cursive, Courier, monospace; */
+    /* font-family: 'Outfit', sans-serif; */
+    font-family: 'Sedgwick Ave', cursive;
+}
+
 header nav{
     padding-top: 15px;
     margin-right: 200px;
-    float:right;
-    font-size: 20px;
+    float: right;
     display: flex;
 }
 
@@ -13,8 +18,19 @@ header nav a{
 }
 
 .jumbotron {
-    text-align: center;
-    /* padding-top: 10rem;
-    padding-bottom: 10rem; */
-    text-shadow: 2px 2px #000;
-  }
+    text-align: left;
+    /* padding-top: 5rem;
+    padding-bottom: 5rem; */
+    text-shadow: 5px 5px #c9aed6;
+    background-image: url("../pictures/walpaper.png");
+}
+
+.display-3{
+    font-weight: bold;
+    color: #330757;
+    margin-left: 40px;
+}
+
+body{
+    background: radial-gradient(circle, #37008f, white);
+}
