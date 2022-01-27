@@ -23,10 +23,10 @@ body{
 }
 
 header nav a{
-    margin-right:50px;
-    margin-left:50px;
+    margin:auto;
     font-size: 20px;
     color: #3d0164;
+    font-weight: bold;
     font-family: 'Sedgwick Ave', cursive;
 }
 
@@ -43,10 +43,10 @@ header nav a:hover{
 .aboutMe img{
     float: left;
     margin: 20px;
-    margin-left:35px;
+    margin-left:22px;
     display:block;
     height: 220px;
-    width: 220px;
+    width: 220px;   
 }
 
 .aboutMEmsg{
@@ -71,6 +71,10 @@ header nav a:hover{
     color: #3d0164;
 }
 
+.link{
+    display:flex;
+}
+
 .link img{
     height:20px;
     width:20px;
@@ -91,8 +95,10 @@ header nav a:hover{
 }
 
 .card img{
-    height:200px; /*100% 200px;*/
-    width: 200px;
+    max-width:100%;
+    max-height:100%;    
+    /* height:200px; 
+    width: 200px; */
 }
 
 .card:hover , .card:hover h4 {
@@ -135,6 +141,11 @@ footer{
 
 #contact-me-link{
     padding:10px;
+    font-weight: bold;
+}
+
+#contact-me-link h5{
+    font-weight: bold;
 }
 /***** footer *****/
 /**********************************/
@@ -149,7 +160,7 @@ footer{
 @media screen and (max-width: 768px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
     /* headear will be on one single line */
-    body{
+    header{
         background-color: red;
     }
 
@@ -218,7 +229,7 @@ footer{
 
 @media screen and (min-width: 992px) {
    
-body{
+header{
     background-color: blue;
 }
 
