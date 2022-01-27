@@ -4,27 +4,17 @@
     /* font-family: 'Sedgwick Ave', cursive; */
 }
 
-header nav{
-    padding-top: 15px;
-    margin-right: 200px;
-    float: right;
-    display: flex;
+body{
+    background: radial-gradient(circle, #37008f, white);
 }
 
-header nav a{
-    margin-right:50px;
-    margin-left:50px;
-    font-size: 16px;
-    font-family: 'Sedgwick Ave', cursive;
-}
-
+/******** start of HEADER ************/
 .jumbotron {
     text-align: left;
     font-family: 'Sedgwick Ave', cursive;
-    /* padding-top: 5rem;
-    padding-bottom: 5rem; */
     text-shadow: 5px 5px #c9aed6;
     background-image: url("../pictures/walpaper.png");
+    margin-bottom:20px;
 }
 
 .display-3{
@@ -33,42 +23,73 @@ header nav a{
     margin-left: 40px;
 }
 
-body{
-    background: radial-gradient(circle, #37008f, white);
+.navbar{
+    margin-left:20px;
+    margin-right:20px;
+    
 }
 
-/******* about me style area ******/
+header nav a{
+    margin-right:50px;
+    margin-left:50px;
+    font-size: 20px;
+    color: #3d0164;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+header nav a:hover{
+    color: #c8bbd1;
+}
+/******** end of HEADER ************/
+/******* start about me style area ******/
 .aboutMe{
-    padding: 20px;
-    padding-left:10px;
-    display: center;
+    padding: 18px;
+    padding-left:25px;
 }
 
 .aboutMe img{
-    margin: 40px;
-    display: center;
+    float: left;
+    margin: 20px;
+    margin-left:35px;
+    display:block;
+    height: 220px;
+    width: 220px;
+}
+
+.aboutMEmsg{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.aboutMEmsg h2{
+    margin-bottom: 20px;
+    font-weight:bold;
+}
+
+.aboutMEmsg p{
+    font-size: 14px;
+    margin-bottom:10px;
 }
 
 .box-to-the-left-about{
     margin-bottom: 20px;
-    margin-top: 150px;
+    margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
     font-family: 'Outfit', sans-serif;
-    /* padding: 50px; */
-    /* height:fit-content;   */
-    background-color: #e6d0f0;
+    background-color: #f5edf8;
     color: #3d0164;
 }
+/******* end of about me style area ******/
 
-.float-left {
+/* .float-left {
     float: left;
     margin-right: 30px;
     margin-bottom: 20px;
     display:block;
     height: 250px;
     width: 250px;
-}
+} */
 
 /* .aboutMe article img{
     margin-right: 10px;
