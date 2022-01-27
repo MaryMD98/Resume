@@ -1,7 +1,7 @@
 *{
     /* font-family:cursive, Courier, monospace; */
     /* font-family: 'Outfit', sans-serif; */
-    font-family: 'Sedgwick Ave', cursive;
+    /* font-family: 'Sedgwick Ave', cursive; */
 }
 
 header nav{
@@ -15,10 +15,12 @@ header nav a{
     margin-right:50px;
     margin-left:50px;
     font-size: 16px;
+    font-family: 'Sedgwick Ave', cursive;
 }
 
 .jumbotron {
     text-align: left;
+    font-family: 'Sedgwick Ave', cursive;
     /* padding-top: 5rem;
     padding-bottom: 5rem; */
     text-shadow: 5px 5px #c9aed6;
@@ -33,4 +35,73 @@ header nav a{
 
 body{
     background: radial-gradient(circle, #37008f, white);
+}
+
+/******* about me style area ******/
+.aboutMe{
+    padding: 20px;
+    padding-left:10px;
+    display: center;
+}
+
+.aboutMe img{
+    margin: 40px;
+    display: center;
+}
+
+.box-to-the-left-about{
+    margin-bottom: 20px;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Outfit', sans-serif;
+    /* padding: 50px; */
+    /* height:fit-content;   */
+    background-color: #e6d0f0;
+    color: #3d0164;
+}
+
+.float-left {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    display:block;
+    height: 250px;
+    width: 250px;
+}
+
+/* .aboutMe article img{
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+   } */
+
+/* image inside content box are displayed to the left */
+
+
+p {
+    font-size:16px;
+    margin-bottom: 20px;
+}
+
+
+
+/* box section will display to the left of the page */
+.box-to-the-left{
+    margin-bottom: 20px;
+    padding: 20px;
+    height:fit-content;  /* */
+    background-color: #7a508d;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/**** Block section about WORKS */
+.works{
+    font-size: 20px;
+    width:75%;
+    display:inline-block;
+    margin-left: 20px;
+    transition: flex-basis 500ms linear;
 }
