@@ -1,3 +1,4 @@
+/// links location and information of homework works to be displayed 
 var worksInfo = {
     urlLink: ["https://marymd98.github.io/Unit1-Homework/",
             "https://marymd98.github.io/Unit2-Homework/",
@@ -18,10 +19,36 @@ var worksInfo = {
             "Homework Four","Homework Five","Homework Six"],
 };
 
-function Display () {
-    var worksEI = document.querySelector(".works");
+/// links location and information of projects to be displayed
+var ProjectsInfo = {
+    urlLink: ["https://sygmo.github.io/stellar-sights/",
+            "#",
+            "#"],
+    imgSRC: ["./Assets/pictures/hw-projects/project1-screenshot.png",
+            "./Assets/pictures/image-2.png",
+            "./Assets/pictures/image-2.png"],
+    title: ["Stellar Sights","Project Two","Project Three"],
+    cardTXT:["Project One","Project Two","Project Three"],
+};
 
-    for(var i=0; i<6; i++){
+// initialize the display of works and projects to display on coresponding area
+function initDisplay(){
+    /// this send the info about projects to the function display
+    var index = 3;
+    var ProjectsEI = document.querySelector(".projects");
+    Display (ProjectsEI, index, ProjectsInfo);
+
+    /// this send the info about works to the function display
+    index = 6;
+    var worksEI = document.querySelector(".works");
+    Display (worksEI, index, worksInfo);
+}
+
+/// create the elements to the cards to be dsplayed
+// use the info from works and projects to display
+function Display (parentEl, indexDIS, info ) {
+    
+    for(var i=0; i<indexDIS; i++){
         var colEI = document.createElement("div");
         colEI.setAttribute("class","col-sm-4");
         var cardEI = document.createElement("div");
@@ -31,17 +58,17 @@ function Display () {
 
         var h4El = document.createElement("h4");
         h4El.setAttribute("class","card-title");
-        h4El.textContent = worksInfo.title[i];
+        h4El.textContent = info.title[i];
 
         var pEl = document.createElement("p");
         pEl.setAttribute("class","card-text");
-        pEl.textContent = worksInfo.cardTXT[i];
+        pEl.textContent = info.cardTXT[i];
 
         var aEl = document.createElement("a");
-        aEl.setAttribute("href",worksInfo.urlLink[i]);
+        aEl.setAttribute("href",info.urlLink[i]);
 
         var imgEl = document.createElement("img");
-        imgEl.setAttribute("src",worksInfo.imgSRC[i]);
+        imgEl.setAttribute("src",info.imgSRC[i]);
 
         aEl.appendChild(imgEl);
 
@@ -49,8 +76,8 @@ function Display () {
         cardEI.append(cardBodyEl);
         colEI.append(cardEI);
 
-        worksEI.append(colEI);
+        parentEl.append(colEI);
     }
 }
 
-Display ();
+initDisplay();

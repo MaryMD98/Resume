@@ -1,9 +1,3 @@
-*{
-    /* font-family:cursive, Courier, monospace; */
-    /* font-family: 'Outfit', sans-serif; */
-    /* font-family: 'Sedgwick Ave', cursive; */
-}
-
 body{
     background: radial-gradient(circle, #37008f, white);
 }
@@ -78,21 +72,7 @@ header nav a:hover{
     color: #3d0164;
 }
 /******* end of about me style area ******/
-
-/******* start of the projects area *******/
-#projects-link{
-    margin-left:10px;
-    margin-bottom:2px;
-    padding-top:10px;
-    font-weight:bold;
-}
-
-.projects{
-    padding:10px;
-    margin:5px;
-    font-family: 'Sedgwick Ave', cursive;
-}
-
+/*********start cards area  *******/
 .card{
     border-style: solid;
     border-width: 1px;
@@ -112,25 +92,139 @@ header nav a:hover{
 .card:hover , .card:hover h4 {
     box-shadow: inset 0px 0px 8px #e866ec, 0 0 30px #e866ec;
   }
-/******* end of the projects area *******/
+/*********end cards area  *******/
+/******* start of the projects and WORKS area *******/
+#projects-link , #works-link{
+    margin-left:10px;
+    margin-bottom:2px;
+    padding-top:10px;
+    font-weight:bold;
+}
 
-/**** Block section about WORKS */
-/* .works{
-    font-size: 20px;
-    width:75%;
-    display:inline-block;
-    margin-left: 20px;
-    transition: flex-basis 500ms linear;
-} */
+.projects , .works{
+    padding:10px;
+    margin:5px;
+    font-family: 'Sedgwick Ave', cursive;
+}
+/******* end of the projects and WORKS area *******/
+/* footer */
+footer{
+    text-align: center;
+    color:#330757;
+}
 
-/* .col-sm-2 {
-    flex: 1;
+/* footer h4{
+    color:#330757; */
+/* } */
+
+/**********************************/
+
+/* for diferent types of screen */
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+/* maxwidth means if device width is less than or equal to 768px then do the code */
+/* min width means if device with is greater than or equal to 992 do the code*/
+
+/* media query on small devices */
+/* device less than 768px - use maxwidth */
+@media screen and (max-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    /* headear will be on one single line */
+    body{
+        background-color: red;
+    }
+
+    /* header nav{  
+        flex-direction: row;
+        margin: 0px;
+        font-size: 14px;  
+    }
+
+   .aboutMe{
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-direction: row;
+   } */
+
+   /* imag will be centered */
+   /* .aboutMe article img{
+    margin: 9px;
+   }
+   
+   .products-firstApp {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 20px;
+        margin:0px;
+        flex-direction: column;
+    }
+
+    .products {
+      flex: 0 0 100%;
+      max-width: 100%;
+      flex-direction: column;
+    } */
+
+    /* to make the cards smaller */
+    /* .card{
+        margin:60px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    } */
+
+    /* contact me info will disply to the bottom of page */
+    /* aside {
+        width: 100%;
+        text-align:center;
+        float: center;
+        font-size: 10px;
+        padding-bottom: 0%;
+    }
+ 
+    aside section figure a img{
+        padding:50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+   footer{
+   padding-top:85%;
+   padding-bottom:20%;
+    } */
+
+}
   
-    /* padding: 15px; */
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: column;added to check */
-    /* so cards dont jump too quick when resizing */
-    /* transition: flex-basis 500ms linear;
-} */ 
+  /* media query for larger screens */
+  /* device greater than 992px - use min width */
+
+@media screen and (min-width: 992px) {
+   
+body{
+    background-color: blue;
+}
+
+    /* .aboutMe article img{
+        margin: 20px;
+        margin-top: 0px;
+    }
+
+    .products-firstApp {
+        flex: 0 0 33.333%;
+        max-width: 33.33340%;
+        padding-right: 10px;
+        margin-left:25%;  
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .products {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+        padding-right: 0px;
+        margin-left:20%;
+     }
+
+    .card{
+        flex-wrap: wrap;
+        flex-direction:row-reverse;
+    }     */
+}
