@@ -20,22 +20,20 @@
 
         <!-- Hyperlinks on the top of page will be conected to the portions displayed on the page-->
         <nav class="navbar bg-light justify-content-center">
-            <!-- <div class="nav "> -->
-                <div class="nav justify-content-center">
-                    <a class="nav-link" href="#about-me-link">About Me</a>
-                    <a class="nav-link" href="#works-link">Works</a>
-                    <a class="nav-link" href="#projects-link">Projects</a>
-                    <a class="nav-link" href="contact-me-link">Contact</a>
-                    <a class="nav-link" href="#">Resume</a>
-                </div>
-            <!-- </div> -->
+            <div class="nav justify-content-center">
+                <a class="nav-link" href="#about-me-link">About Me</a>
+                <a class="nav-link" href="#projects-link">Projects</a>
+                <a class="nav-link" href="#works-link">Works</a>
+                <a class="nav-link" href="contact-me-link">Contact</a>
+                <a class="nav-link" href="./Assets/pdf/Montes Maribel - Resume.pdf">Resume</a>
+            </div>
         </nav>
     </header> 
     
     <main>
-        <!-- Boxes sections, about me, works, projecs, contct navbar-expand-lgme container-fluid--> 
+        <!-- Boxes sections, about me, works, projecs, --> 
         <!-- boxes will be displayed to the center of the page -->     
-        <section class="row box-to-the-left-about">
+        <section class="row box-info">
             <!-- box section ABOUT ME-->
             <div class="col-sm-4 aboutMe">
                 <img src="./Assets/pictures/Maribel.jpg" alt="picture of Maribel Montes"/>
@@ -49,91 +47,105 @@
             </div>
         </section>
 
-        <section class="row works">
-            <!-- box section about WORKS -->
-            <!-- <figure id="works-link"  class="box-to-the-left">
-                <h2>WORKS:</h2>
-                <div class="products-firstApp">
-
-                     <section class="firstapp">
-                        <h3>Landing Page</h3>
-                        <a href = "https://marymd98.github.io/UnitOne/">
-                            <img src="./Assets/image/screenshot-miniproject-one.png" alt="screenshot image of webpage of miniproject one">
-                        </a>  
-
-                        <p>Mini Project Unit 1</p>
-                    </section>
-                </div> -->
-
-                <!-- <br></br> -->
-
-                <!-- <div class="row products">
-
-                        <section class="card">
-                            <h3>Code Refactor</h3>
-                            <a href = "https://marymd98.github.io/Unit1-Homework/">
-                                <img src="./Assets/image/screenshot-homework-one.png" alt="screenshot image of webpage of homework one">
-                            </a>                     
-
-                            <p>Homework One</p>
-                        </section>
-
-                        <section class="card">
-                            <h3>CSS Snippet</h3>
-                            <a href = "https://marymd98.github.io/UnitTwo/">
-                                <img src="./Assets/image/screenshot-miniproject-two.png" alt="screenshot image of webpage of miniproject one">
+        <!-- Box section about PROJECTS -->
+        <section class="box-info">
+            <h2 id="projects-link">PROJECTS:</h2>
+            <div class="row projects">
+                <!-- card one of the projects -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Stellar Sights</h4>
+                            <p class="card-text">Project One</p>
+                            <a href = "https://sygmo.github.io/stellar-sights/">
+                                <img src="./Assets/pictures/hw-projects/project1-screenshot.png" alt="screenshot of project one stellar sights">
                             </a> 
-
-                            <p>Mini Project Unit 2</p>
-                        </section>
-
-                        <section class="card">
-                            <h3>Portafolio</h3>
-                            <a href = "https://marymd98.github.io/Unit2-Homework/">
-                                <img src="./Assets/image/screenshot-homework-two.png" alt="screenshot image of webpage of homework two">
-                            </a> 
-
-                            <p>Homework two</p>
-                        </section>
-                        
+                         </div>
                     </div>
-           
-            </figure> -->
-             <!-- Box section about PROJECTS -->
-             <!-- <figure id="projects-link" class=" row box-to-the-left">
-                <h2>PROJECTS:</h2>
-                <div class="products">
-                    <section class="card">
-                        <h3>Project one</h3>
-                        <a href = "#">
-                            <img src="./Assets/image/image-2.png" alt="image placeholder for project one">
-                        </a> 
-
-                        <p>project One</p>
-                    </section>
-
-                    <section class="card">
-                        <h3>Project Two</h3>
-                        <a href = "#">
-                            <img src="./Assets/image/image-2.png" alt="image placeholder for project two">
-                        </a> 
-                        
-                        <p>Project Two</p>
-                    </section>
-
-                    <section class="card">
-                        <h3>Project Three</h3>
-                        <a href = "#">
-                            <img src="./Assets/image/image-2.png" alt="image placeholder for project three">
-                        </a> 
-                       
-                        <p>Project Three</p>
-                    </section>
-
                 </div>
+                <!-- card two of the projects -->   
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Project Two</h4>
+                            <p class="card-text">Project Two</p>
+                            <a href = "#">
+                                <img src="./Assets/pictures/image-2.png" alt="image placeholder for project two">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card three of the projects -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Project Three</h4>
+                            <p class="card-text">Project Three</p>
+                            <a href = "#">
+                                <img src="./Assets/pictures/image-2.png" alt="image placeholder for project two">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
             
+        <!-- Box section about WORKS -->
+        <section class="box-info">
+            <h2 id="works-link">Work:</h2>
+            <div class="row works">
+                <!-- card one of the projects -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Stellar Sights</h4>
+                            <p class="card-text">Project One</p>
+                            <a href = "https://sygmo.github.io/stellar-sights/">
+                                <img src="./Assets/pictures/hw-projects/project1-screenshot.png" alt="screenshot of project one stellar sights">
+                            </a> 
+                         </div>
+                    </div>
+                </div>
+                <!-- card two of the projects -->   
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Project Two</h4>
+                            <p class="card-text">Project Two</p>
+                            <a href = "#">
+                                <img src="./Assets/pictures/image-2.png" alt="image placeholder for project two">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card three of the projects -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Project Three</h4>
+                            <p class="card-text">Project Three</p>
+                            <a href = "#">
+                                <img src="./Assets/pictures/image-2.png" alt="image placeholder for project two">
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-            </figure> -->
+                <!-- card three of the projects -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Project Three</h4>
+                            <p class="card-text">Project Three</p>
+                            <a href = "#">
+                                <img src="./Assets/pictures/image-2.png" alt="image placeholder for project two">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </section>
 
     </main>
