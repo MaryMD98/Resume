@@ -6,6 +6,12 @@ var worksInfo = {
             "https://marymd98.github.io/Unit4-Homework/",
             "https://marymd98.github.io/Unit5-Homework/",
             "https://marymd98.github.io/Unit6-Homework/"],
+    repoLink:["https://github.com/MaryMD98/Unit1-Homework.git",
+            "https://github.com/MaryMD98/Unit2-Homework.git",
+            "https://github.com/MaryMD98/Unit3-Homework.git",
+            "https://github.com/MaryMD98/Unit4-Homework.git",
+            "https://github.com/MaryMD98/Unit5-Homework.git",
+            "https://github.com/MaryMD98/Unit6-Homework.git"],
     imgSRC: ["./Assets/pictures/hw-projects/hw1-Screenshot.png",
             "./Assets/pictures/hw-projects/hw2-Screenshot.png",
             "./Assets/pictures/hw-projects/hw3-Screenshot.png",
@@ -15,8 +21,8 @@ var worksInfo = {
     title: ["Code Refactor","Portafolio","Password Generator",
             "Coding Quiz Challenge","Work Day Scheduler",
             "Weather Dashboard"],
-    cardTXT:["Homework One","Homework Two","Homework Three",
-            "Homework Four","Homework Five","Homework Six"],
+    cardTXT:["Homework One Repo","Homework Two Repo","Homework Three Repo",
+            "Homework Four Repo","Homework Five Repo","Homework Six Repo"],
 };
 
 /// links location and information of projects to be displayed
@@ -24,11 +30,14 @@ var ProjectsInfo = {
     urlLink: ["https://sygmo.github.io/stellar-sights/",
             "#",
             "#"],
+    repoLink:["https://github.com/sygmo/stellar-sights.git",
+            "#",
+            "#"],
     imgSRC: ["./Assets/pictures/hw-projects/project1-screenshot.png",
             "./Assets/pictures/image-2.png",
             "./Assets/pictures/image-2.png"],
     title: ["Stellar Sights","Project Two","Project Three"],
-    cardTXT:["Project One","Project Two","Project Three"],
+    cardTXT:["Project One Repo","Project Two Repo","Project Three Repo"],
 };
 
 // initialize the display of works and projects to display on coresponding area
@@ -60,6 +69,9 @@ function Display (parentEl, indexDIS, info ) {
         h4El.setAttribute("class","card-title");
         h4El.textContent = info.title[i];
 
+        var aE2l = document.createElement("a");
+        aE2l.setAttribute("href",info.repoLink[i]);
+
         var pEl = document.createElement("p");
         pEl.setAttribute("class","card-text");
         pEl.textContent = info.cardTXT[i];
@@ -70,9 +82,10 @@ function Display (parentEl, indexDIS, info ) {
         var imgEl = document.createElement("img");
         imgEl.setAttribute("src",info.imgSRC[i]);
 
+        aE2l.appendChild(pEl);
         aEl.appendChild(imgEl);
 
-        cardBodyEl.append(h4El,pEl,aEl);
+        cardBodyEl.append(h4El,aE2l,aEl);
         cardEI.append(cardBodyEl);
         colEI.append(cardEI);
 
@@ -81,3 +94,18 @@ function Display (parentEl, indexDIS, info ) {
 }
 
 initDisplay();
+
+// <!-- card one of the projects -->
+// <div class="col-sm-4">
+//     <div class="card">
+//         <div class="card-body">
+//             <h4 class="card-title">Stellar Sights</h4>
+//             <a href = "https://sygmo.github.io/stellar-sights/">
+//                 <p class="card-text">Project One</p>
+//             </a>
+//             <a href = "https://sygmo.github.io/stellar-sights/">
+//                 <img src="./Assets/pictures/hw-projects/project1-screenshot.png" alt="screenshot of project one stellar sights">
+//             </a> 
+//          </div>
+//     </div>
+// </div>

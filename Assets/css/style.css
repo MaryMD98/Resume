@@ -118,6 +118,14 @@ header nav a:hover{
     margin:5px;
     font-family: 'Sedgwick Ave', cursive;
 }
+
+.projects a , .works a{
+    color:#330757;
+}
+
+.project a:hover , .works a:hover{
+    color: #c8bbd1;
+}
 /******* end of the projects and WORKS area *******/
 /***** footer *****/
 footer{
