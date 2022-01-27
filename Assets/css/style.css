@@ -160,102 +160,37 @@ footer{
 @media screen and (max-width: 768px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
     /* headear will be on one single line */
-    header{
-        background-color: red;
-    }
-
-    /* header nav{  
-        flex-direction: row;
-        margin: 0px;
-        font-size: 14px;  
-    }
-
-   .aboutMe{
-    flex: 0 0 100%;
-    max-width: 100%;
-    flex-direction: row;
-   } */
-
-   /* imag will be centered */
-   /* .aboutMe article img{
-    margin: 9px;
-   }
    
-   .products-firstApp {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 20px;
-        margin:0px;
+    .box-info{
         flex-direction: column;
     }
 
-    .products {
-      flex: 0 0 100%;
-      max-width: 100%;
-      flex-direction: column;
-    } */
-
-    /* to make the cards smaller */
-    /* .card{
-        margin:60px;
-        margin-bottom: 0px;
-        margin-top: 20px;
-    } */
-
-    /* contact me info will disply to the bottom of page */
-    /* aside {
-        width: 100%;
-        text-align:center;
-        float: center;
-        font-size: 10px;
-        padding-bottom: 0%;
-    }
- 
-    aside section figure a img{
-        padding:50px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+    header nav a{  
+        flex-direction: row;
     }
 
-   footer{
-   padding-top:85%;
-   padding-bottom:20%;
-    } */
-
+    .projects , .works{
+        flex-wrap: wrap;
+        flex-direction:column;
+        transition: flex-basis 500ms linear;
+    }
 }
   
   /* media query for larger screens */
   /* device greater than 992px - use min width */
 
 @media screen and (min-width: 992px) {
-   
-header{
-    background-color: blue;
-}
 
-    /* .aboutMe article img{
-        margin: 20px;
-        margin-top: 0px;
+    .projects , .works{
+        margin-top:20px;
     }
-
-    .products-firstApp {
-        flex: 0 0 33.333%;
-        max-width: 33.33340%;
-        padding-right: 10px;
-        margin-left:25%;  
-        margin-top: 5%;
-        margin-bottom: 5%;
+        
+    .box-info{
+        padding:30px;
     }
-
-    .products {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-        padding-right: 0px;
-        margin-left:20%;
-     }
 
     .card{
         flex-wrap: wrap;
         flex-direction:row-reverse;
-    }     */
+    }    
 }
