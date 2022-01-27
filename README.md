@@ -1,17 +1,17 @@
-# Homework Unit Eight:
-# Portafolio
+# Homework Unit Eight:  Portafolio
 
-## Description of the homework:
+# Description of the homework:
 
-In this homework, I created my portafolio with the latest homeworks assigments and the project one assigment. I used th layout on the previous portafolio assigment in homework two, and updated it using what i have learned so far in class.
+In this homework, I created my portafolio and added links to the latest homeworks assigments and  project one assigment. I used the layout on the previous portafolio assigment in homework two, and inproved it using what i have learned so far in class.
 
-The page displays a planner with timeblocks for standard business hours. Each timeblock is color coded to indicate whether the event in the planner is in the past, in the preset, or in the future. Each timeblock has a save button. When a message is inputted in the timeblock and the user has pressed saved, the message will be saved on the local storage to load anytime the user refreshes the page. When a new day starts, the planner resets to start a new day.
+The page displays my portafolio. It displays and area "About Me", "Projects", "Works" and "Contact Me". The About Me area, displays information about me. The Projects and Works display cards with the screenshot of the asigment and  title. The pictures inside the cards are hyperlinks to the link deploiment of the assigments. Above the cards there is a link to the repo of the assigment. the contact me information displays the linkedin, github and email information about me. 
 
-In this homework, I used, jQuery, moment, bootstrap, and javascript to create the planner. 
+In this homework, I used, jQuery, bootstrap, googlefonts and javascript to create my Portafolio. 
 
-### Link to application [HERE](https://marymd98.github.io/Resume/)
+# Link to application:
+Link to the application [HERE](https://marymd98.github.io/Resume/)
 
-## Screenshot  of Portafolio:
+# Screenshot  of Portafolio:
 Below are screenshots of my Portafolio. 
 
 ![image one of portafolio screenshot](./Screenshots/Screenshot1.png)
