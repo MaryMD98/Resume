@@ -17,3 +17,40 @@ var worksInfo = {
     cardTXT:["Homework One","Homework Two","Homework Three",
             "Homework Four","Homework Five","Homework Six"],
 };
+
+function Display () {
+    var worksEI = document.querySelector(".works");
+
+    for(var i=0; i<6; i++){
+        var colEI = document.createElement("div");
+        colEI.setAttribute("class","col-sm-4");
+        var cardEI = document.createElement("div");
+        cardEI.setAttribute("class","card");
+        var cardBodyEl = document.createElement("div");
+        cardBodyEl.setAttribute("class","card-body");
+
+        var h4El = document.createElement("h4");
+        h4El.setAttribute("class","card-title");
+        h4El.textContent = worksInfo.title[i];
+
+        var pEl = document.createElement("p");
+        pEl.setAttribute("class","card-text");
+        pEl.textContent = worksInfo.cardTXT[i];
+
+        var aEl = document.createElement("a");
+        aEl.setAttribute("href",worksInfo.urlLink[i]);
+
+        var imgEl = document.createElement("img");
+        imgEl.setAttribute("src",worksInfo.imgSRC[i]);
+
+        aEl.appendChild(imgEl);
+
+        cardBodyEl.append(h4El,pEl,aEl);
+        cardEI.append(cardBodyEl);
+        colEI.append(cardEI);
+
+        worksEI.append(colEI);
+    }
+}
+
+Display ();
