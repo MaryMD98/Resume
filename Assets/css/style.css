@@ -80,6 +80,8 @@ header nav a:hover{
     width:20px;
     margin-top: 40px;
     margin-left:2px;
+    background-color: #f5edf8;
+    mix-blend-mode: multiply;
 }
 /******* end of about me style area ******/
 /*********start cards area  *******/
@@ -141,6 +143,7 @@ footer{
 .link-footer{
     margin-right:20px;
     color:#330757;
+    mix-blend-mode: multiply;
 }
 
 .link-footer:hover{
