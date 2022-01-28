@@ -1,5 +1,5 @@
 /// links location and information of homework works to be displayed 
-var worksInfo = {
+const worksInfo = {
     urlLink: ["https://marymd98.github.io/Unit6-Homework/",
             "https://marymd98.github.io/Unit5-Homework/",
             "https://marymd98.github.io/Unit4-Homework/",
@@ -25,7 +25,7 @@ var worksInfo = {
 };
 
 /// links location and information of projects to be displayed
-var ProjectsInfo = {
+const ProjectsInfo = {
     urlLink: ["https://sygmo.github.io/stellar-sights/",
             "#",
             "#"],
@@ -43,12 +43,12 @@ var ProjectsInfo = {
 function initDisplay(){
     /// this send the info about projects to the function display
     var index = 3;
-    var ProjectsEI = document.querySelector(".projects");
+    const ProjectsEI = document.querySelector(".projects");
     Display (ProjectsEI, index, ProjectsInfo);
 
     /// this send the info about works to the function display
     index = 6;
-    var worksEI = document.querySelector(".works");
+    const worksEI = document.querySelector(".works");
     Display (worksEI, index, worksInfo);
 }
 
@@ -57,28 +57,28 @@ function initDisplay(){
 function Display (parentEl, indexDIS, info ) {
     
     for(var i=0; i<indexDIS; i++){
-        var colEI = document.createElement("div");
+        const colEI = document.createElement("div");
         colEI.setAttribute("class","col-sm-4");
-        var cardEI = document.createElement("div");
+        const cardEI = document.createElement("div");
         cardEI.setAttribute("class","card");
-        var cardBodyEl = document.createElement("div");
+        const cardBodyEl = document.createElement("div");
         cardBodyEl.setAttribute("class","card-body");
 
-        var h4El = document.createElement("h4");
+        const h4El = document.createElement("h4");
         h4El.setAttribute("class","card-title");
         h4El.textContent = info.title[i];
 
-        var aE2l = document.createElement("a");
+        const aE2l = document.createElement("a");
         aE2l.setAttribute("href",info.repoLink[i]);
 
-        var pEl = document.createElement("p");
+        const pEl = document.createElement("p");
         pEl.setAttribute("class","card-text");
         pEl.textContent = info.cardTXT[i];
 
-        var aEl = document.createElement("a");
+        const aEl = document.createElement("a");
         aEl.setAttribute("href",info.urlLink[i]);
 
-        var imgEl = document.createElement("img");
+        const imgEl = document.createElement("img");
         imgEl.setAttribute("src",info.imgSRC[i]);
 
         aE2l.appendChild(pEl);
