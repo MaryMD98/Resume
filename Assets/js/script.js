@@ -58,7 +58,7 @@ function initDisplay(){
     Display (ProjectsEI, index, ProjectsInfo);
 
     /// this send the info about works to the function display
-    index = 6;
+    index = 9;
     const worksEI = document.querySelector(".works");
     Display (worksEI, index, worksInfo);
 }
