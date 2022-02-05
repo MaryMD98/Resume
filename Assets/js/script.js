@@ -20,7 +20,7 @@ const worksInfo = {
             "https://github.com/MaryMD98/Unit1-Homework.git"],
     imgSRC: ["./Assets/pictures/hw-projects/hw11-NoteTaker.png",
             "./Assets/pictures/hw-projects/hw10-TeamGenerator.png",
-            "./Assets/pictures/hw-projects/hw9-ReadME generator",
+            "./Assets/pictures/hw-projects/hw9-ReadME generator.png",
             "./Assets/pictures/hw-projects/hw6-Screenshot.png",
             "./Assets/pictures/hw-projects/hw5-Screenshot.png",
             "./Assets/pictures/hw-projects/hw4-Screenshot.png",
