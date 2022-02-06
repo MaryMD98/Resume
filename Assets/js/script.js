@@ -1,8 +1,8 @@
 /// links location and information of homework works to be displayed 
 const worksInfo = {
     urlLink: ["https://shrouded-eyrie-81862.herokuapp.com/",
-            "https://watch.screencastify.com/v/gWULa8QVKPIP0794AgvH",
-            "https://watch.screencastify.com/v/EwMaCsGJX6D2LahB6aA6",
+"https://drive.google.com/file/d/1NmFVXjeOv9QQfiM3FMvG5-2YYfw6Z7PU/view",
+"https://drive.google.com/file/d/1LlUAUnrNxKqgGgh-7QmrCBzpQ2JznV-U/view",
             "https://marymd98.github.io/Unit6-Homework/",
             "https://marymd98.github.io/Unit5-Homework/",
             "https://marymd98.github.io/Unit4-Homework/",
